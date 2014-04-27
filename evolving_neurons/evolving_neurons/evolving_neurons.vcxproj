@@ -80,9 +80,13 @@
   <ItemGroup>
     <ClInclude Include="INet.h" />
     <ClInclude Include="INetStructure.h" />
+    <ClInclude Include="NetImpl.h" />
+    <ClInclude Include="NetStructureImpl.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="NetImpl.cpp" />
+    <ClCompile Include="NetStructureImpl.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
