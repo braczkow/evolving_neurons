@@ -107,10 +107,10 @@ private:
 		std::vector<ISink*> sinks(m_innerLayer.begin(), m_innerLayer.end());
 		sinks.insert(sinks.begin(), m_outputLayer.begin(), m_outputLayer.end());
 
-		int sourcesCount = sources.size();
-		int sinksCount = sinks.size();
-		
+		int source = m_choose(sources.size());
+		int sink = m_choose(sinks.size());
 
+		sinks[sink]->connectSource(sources[source]);	
 	}
 
 	void m_changeWeight();
@@ -162,6 +162,8 @@ private:
 			result.push_back((*outputIter)->readOutputValue());
 		}
 	}
+
+	int m_choose(int max);
 
 	std::vector<InputNeuron*> m_inputLayer;
 
