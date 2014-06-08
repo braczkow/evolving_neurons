@@ -78,15 +78,31 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="IEvolutionSelector.h" />
     <ClInclude Include="INet.h" />
     <ClInclude Include="INetStructure.h" />
+    <ClInclude Include="InnerNeuron.h" />
+    <ClInclude Include="InputNeuron.h" />
+    <ClInclude Include="ISink.h" />
+    <ClInclude Include="ISource.h" />
+    <ClInclude Include="ITransferFunction.h" />
     <ClInclude Include="NetImpl.h" />
     <ClInclude Include="NetStructureImpl.h" />
+    <ClInclude Include="NeuronFactory.h" />
+    <ClInclude Include="OutputNeuron.h" />
+    <ClInclude Include="SigmoidTransferFunction.h" />
+    <ClInclude Include="Utils.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="InnerNeuron.cpp" />
+    <ClCompile Include="InputNeuron.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="NetImpl.cpp" />
     <ClCompile Include="NetStructureImpl.cpp" />
+    <ClCompile Include="NeuronFactory.cpp" />
+    <ClCompile Include="OutputNeuron.cpp" />
+    <ClCompile Include="SigmoidTransferFunction.cpp" />
+    <ClCompile Include="Utils.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

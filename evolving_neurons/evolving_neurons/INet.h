@@ -2,20 +2,7 @@
 
 class INetStructure;
 
-enum EEvolutionType
-{
-	AddNeuron,
-	AddConnection,
-	ChangeWeight,
-
-	EvolutionTypeMax
-};
-
-class IEvolutionSelector
-{
-public:
-	virtual EEvolutionType getEvolution() = 0;
-};
+class IEvolutionSelector;
 
 class INet
 {
